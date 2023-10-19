@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  width: 100%;
+  height: 200vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  width: 375px;
+  height: 600px;
+  background: #f1f3f6;
+  border-radius: 40px;
+}
+.dark-mode-button {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.change-theme {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin-right: 10px;
+  background-image: url("./img/Mode\ \(Light\).png");
+  background-position: center;
+  border: 0;
+  outline: 0;
+}
+.display {
+  width: 335px;
+  height: 116px;
+  border-radius: 15px;
+  background: #f1f3f6;
+  box-shadow: 5px 5px 10px 0px rgba(55, 84, 170, 0.1), -5px -5px 10px 0px #fff;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.display input {
+  width: 313px;
+  height: 102px;
+  border-radius: 10px;
+  border: 2px solid #1565c0;
+  background: #f1f3f6;
+  color: #000;
+  font-family: "Digital Numbers", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: right;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+form input {
+  width: 72px;
+  height: 66px;
+  border-radius: 15px;
+  background: #f1f3f6;
+  box-shadow: 5px 5px 10px 0px rgba(55, 84, 170, 0.1), -5px -5px 10px 0px #fff;
+  border: 0;
+  outline: 0;
+  color: #333632;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.calculator form input:active {
+  box-shadow: none;
+}
+.zero {
+  width: 160px;
+  height: 66px;
+  border-radius: 15px;
+  background: #f1f3f6;
+  box-shadow: 5px 5px 10px 0px rgba(55, 84, 170, 0.1), -5px -5px 10px 0px #fff;
+}
+.calculation {
+  border-radius: 15px;
+  border: 1px solid #1565c0;
+  color: #1565c0;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  box-shadow: 5px 5px 10px 0px rgba(55, 84, 170, 0.1), -5px -5px 10px 0px #fff;
+}
+.same {
+  background: #1565c0;
+  color: #fff;
+}
+.dark-mode-image {
+  width: 30px;
+  height: 30px;
+}
+
+.calculator.dark-mode {
+  background: linear-gradient(180deg, #1a1b1f 0%, #17181c 100%);
+  border-radius: 15px;
+  background: #141518;
+  box-shadow: -5px -5px 10px 0px rgba(20, 21, 24, 0.1), 5px 5px 10px 0px #000;
+}
+.dark-mode .change-theme {
+  background-image: url("./img/Mode\ \(Dark\).png");
+  background-position: center;
+}
+.dark-mode .display {
+  border-radius: 15px;
+  background: #141518;
+  box-shadow: -5px -5px 10px 0px rgba(20, 21, 24, 0.1), 5px 5px 10px 0px #000;
+}
+.dark-mode .display input {
+  border-radius: 10px;
+  border: 2px solid #1565c0;
+  color: #f1f3f6;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #202226;
+  box-shadow: -5px -5px 10px 0px rgba(20, 21, 24, 0.1), 5px 5px 10px 0px #000;
+}
+.same:active {
+  box-shadow: none;
+}
+
+.dark-mode .digital-numbers {
+  border-radius: 15px;
+  background: #141518;
+  box-shadow: -5px -5px 10px 0px #141518, 5px 5px 10px 0px #000;
+  color: #f1f3f6;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.dark-mode .calculation {
+  border-radius: 15px;
+  border: 1px solid #1565c0;
+  border-radius: 15px;
+  background: #141518;
+  box-shadow: -5px -5px 10px 0px #141518, 5px 5px 10px 0px #000;
+  color: #1565c0;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
+.dark-mode .same {
+  border-radius: 15px;
+  box-shadow: -5px -5px 10px 0px #141518, 5px 5px 10px 0px #000;
+  border-radius: 15px;
+  background: #1565c0;
+  color: #fff;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 125% */
+}
